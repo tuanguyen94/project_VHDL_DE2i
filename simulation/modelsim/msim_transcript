@@ -1,0 +1,151 @@
+# Reading C:/altera/12.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do led_shift_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying c:\altera\12.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied c:\altera\12.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {D:/OneDrive/STUDY/code project/FPGA/led_shift/decoder.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Compiling entity decoder7seg
+# -- Compiling architecture decod_arch of decoder7seg
+# vcom -93 -work work {D:/OneDrive/STUDY/code project/FPGA/led_shift/led_shift.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity case_display_top
+# -- Compiling architecture display_arch of case_display_top
+# vcom -93 -work work {D:/OneDrive/STUDY/code project/FPGA/led_shift/lpm_counter0.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity lpm_counter0
+# -- Compiling architecture SYN of lpm_counter0
+# vcom -93 -work work {D:/OneDrive/STUDY/code project/FPGA/led_shift/output_files/lcd_controler.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity lcd_controler
+# -- Compiling architecture lcd_arch of lcd_controler
+# vcom -93 -work work {D:/OneDrive/STUDY/code project/FPGA/led_shift/half_adder.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity half_adder
+# -- Compiling architecture half_adder_arch of half_adder
+# vcom -93 -work work {D:/OneDrive/STUDY/code project/FPGA/led_shift/full_adder.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity full_adder
+# -- Compiling architecture full_adder_arch of full_adder
+# vcom -93 -work work {D:/OneDrive/STUDY/code project/FPGA/led_shift/adder_4bit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity adder_4bit
+# -- Compiling architecture adder_arch of adder_4bit
+# vcom -93 -work work {D:/OneDrive/STUDY/code project/FPGA/led_shift/D2B_5bit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity D2B_5bit
+# -- Compiling architecture D2B_5bit_arch of D2B_5bit
+# ** Error: D:/OneDrive/STUDY/code project/FPGA/led_shift/D2B_5bit.vhd(20): Prefix of slice name cannot be type conversion (STD_LOGIC_VECTOR) expression.
+# ** Error: D:/OneDrive/STUDY/code project/FPGA/led_shift/D2B_5bit.vhd(25): Prefix of slice name cannot be type conversion (STD_LOGIC_VECTOR) expression.
+# ** Error: D:/OneDrive/STUDY/code project/FPGA/led_shift/D2B_5bit.vhd(32): VHDL Compiler exiting
+# ** Error: c:/altera/12.1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./led_shift_run_msim_rtl_vhdl.do line 15
+# c:/altera/12.1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -93 -work work {D:/OneDrive/STUDY/code project/FPGA/led_shift/D2B_5bit.vhd}"
+vsim work.d2b_5bit
+# vsim work.d2b_5bit 
+# Loading std.standard
+# ** Error: (vsim-3173) Entity 'D:/OneDrive/STUDY/code project/FPGA/led_shift/simulation/modelsim/rtl_work.d2b_5bit' has no architecture.
+# 
+# Error loading design
+vlog -work rtl_work -refresh -force_refresh
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Skipping entity adder_4bit
+# -- Skipping entity case_display_top
+# -- Skipping entity d2b_5bit
+# -- Skipping entity decoder7seg
+# -- Skipping entity full_adder
+# -- Skipping entity half_adder
+# -- Skipping entity lcd_controler
+# -- Skipping entity lpm_counter0
+vcom -work rtl_work -refresh -force_refresh
+# Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity adder_4bit
+# -- Compiling architecture adder_arch of adder_4bit
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity case_display_top
+# -- Compiling architecture display_arch of case_display_top
+# -- Loading package NUMERIC_STD
+# -- Compiling entity D2B_5bit
+# -- Loading package STD_LOGIC_SIGNED
+# -- Compiling entity decoder7seg
+# -- Compiling architecture decod_arch of decoder7seg
+# -- Compiling entity full_adder
+# -- Compiling architecture full_adder_arch of full_adder
+# -- Compiling entity half_adder
+# -- Compiling architecture half_adder_arch of half_adder
+# -- Compiling entity lcd_controler
+# -- Compiling architecture lcd_arch of lcd_controler
+# -- Compiling entity lpm_counter0
+# -- Compiling architecture SYN of lpm_counter0
+vsim work.d2b_5bit
+# vsim work.d2b_5bit 
+# Loading std.standard
+# ** Error: (vsim-3173) Entity 'D:/OneDrive/STUDY/code project/FPGA/led_shift/simulation/modelsim/rtl_work.d2b_5bit' has no architecture.
+# 
+# Error loading design
+vsim work.d2b_5bit
+# vsim work.d2b_5bit 
+# Loading std.standard
+# ** Error: (vsim-3173) Entity 'D:/OneDrive/STUDY/code project/FPGA/led_shift/simulation/modelsim/rtl_work.d2b_5bit' has no architecture.
+# 
+# Error loading design
+vsim work.decoder7seg
+# vsim work.decoder7seg 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.decoder7seg(decod_arch)
+vsim work.decoder7seg(decod_arch)
+# vsim work.decoder7seg(decod_arch) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.decoder7seg(decod_arch)

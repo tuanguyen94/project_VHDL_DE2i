@@ -1,0 +1,150 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2012 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 32-bit
+# Version 12.1 Build 177 11/07/2012 SJ Web Edition
+# Date created = 09:33:01  October 31, 2015
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		led_shift_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV GX"
+set_global_assignment -name DEVICE EP4CGX150DF31C7
+set_global_assignment -name TOP_LEVEL_ENTITY Block1
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 12.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "09:33:01  OCTOBER 31, 2015"
+set_global_assignment -name LAST_QUARTUS_VERSION 12.1
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_AJ16 -to clk
+set_location_assignment PIN_T23 -to led0
+set_location_assignment PIN_T24 -to led1
+set_location_assignment PIN_V27 -to led2
+set_location_assignment PIN_W25 -to led3
+set_location_assignment PIN_T21 -to led4
+set_location_assignment PIN_T26 -to led5
+set_location_assignment PIN_R25 -to led6
+set_location_assignment PIN_T27 -to led7
+set_location_assignment PIN_AA26 -to reset
+set_location_assignment PIN_AJ3 -to rw
+set_location_assignment PIN_AG3 -to rs
+set_location_assignment PIN_AF4 -to e
+set_location_assignment PIN_AG4 -to D0
+set_location_assignment PIN_AF3 -to D1
+set_location_assignment PIN_AH3 -to D2
+set_location_assignment PIN_AE5 -to D3
+set_location_assignment PIN_AH2 -to D4
+set_location_assignment PIN_AE3 -to D5
+set_location_assignment PIN_AH4 -to D6
+set_location_assignment PIN_AE4 -to D7
+set_location_assignment PIN_A15 -to lcd_clk
+set_global_assignment -name VHDL_FILE decoder.vhd
+set_global_assignment -name VHDL_FILE led_shift.vhd
+set_global_assignment -name QIP_FILE lpm_counter0.qip
+set_global_assignment -name BDF_FILE Block1.bdf
+set_global_assignment -name VHDL_FILE output_files/lcd_controler.vhd
+set_global_assignment -name VHDL_FILE half_adder.vhd
+set_global_assignment -name VHDL_FILE full_adder.vhd
+set_global_assignment -name VHDL_FILE adder_4bit.vhd
+set_location_assignment PIN_G14 -to S1a
+set_location_assignment PIN_B13 -to S1b
+set_location_assignment PIN_G13 -to S1c
+set_location_assignment PIN_F12 -to S1d
+set_location_assignment PIN_G12 -to S1e
+set_location_assignment PIN_J9 -to S1f
+set_location_assignment PIN_B9 -to A2a
+set_location_assignment PIN_G10 -to S1g
+set_location_assignment PIN_E12 -to S2b
+set_location_assignment PIN_G11 -to S2c
+set_location_assignment PIN_F11 -to S2d
+set_location_assignment PIN_F16 -to S2e
+set_location_assignment PIN_D16 -to S2f
+set_location_assignment PIN_F14 -to S2g
+set_location_assignment PIN_AF27 -to on
+set_global_assignment -name VHDL_FILE D2B_5bit.vhd
+set_location_assignment PIN_E15 -to S2a
+set_location_assignment PIN_E10 -to A1a
+set_location_assignment PIN_F8 -to A1b
+set_location_assignment PIN_F9 -to A1c
+set_location_assignment PIN_C10 -to A1d
+set_location_assignment PIN_C11 -to A1e
+set_location_assignment PIN_C12 -to A1f
+set_location_assignment PIN_D12 -to A1g
+set_location_assignment PIN_B10 -to A2b
+set_location_assignment PIN_C8 -to A2c
+set_location_assignment PIN_C9 -to A2d
+set_location_assignment PIN_D8 -to A2e
+set_location_assignment PIN_D9 -to A2f
+set_location_assignment PIN_E9 -to A2g
+set_location_assignment PIN_D3 -to B1a
+set_location_assignment PIN_A10 -to B1b
+set_location_assignment PIN_A9 -to B1c
+set_location_assignment PIN_A7 -to B1d
+set_location_assignment PIN_A6 -to B1e
+set_location_assignment PIN_A11 -to B1f
+set_location_assignment PIN_B6 -to B1g
+set_location_assignment PIN_A14 -to B2a
+set_location_assignment PIN_A13 -to B2b
+set_location_assignment PIN_C7 -to B2c
+set_location_assignment PIN_C6 -to B2d
+set_location_assignment PIN_C5 -to B2e
+set_location_assignment PIN_C4 -to B2f
+set_location_assignment PIN_C3 -to B2g
+set_location_assignment PIN_P25 -to led8
+set_location_assignment PIN_R24 -to led9
+set_location_assignment PIN_P21 -to led10
+set_location_assignment PIN_N24 -to led11
+set_location_assignment PIN_N21 -to led12
+set_location_assignment PIN_M25 -to led13
+set_location_assignment PIN_K24 -to led14
+set_location_assignment PIN_L25 -to led15
+set_location_assignment PIN_M21 -to led16
+set_location_assignment PIN_M22 -to led17
+set_location_assignment PIN_H25 -to A3
+set_location_assignment PIN_C30 -to A2
+set_location_assignment PIN_K25 -to A1
+set_location_assignment PIN_J26 -to A0
+set_location_assignment PIN_N25 -to B3
+set_location_assignment PIN_M26 -to B2
+set_location_assignment PIN_N26 -to B1
+set_location_assignment PIN_R26 -to B0
+set_location_assignment PIN_V28 -to sw0
+set_location_assignment PIN_U30 -to sw1
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

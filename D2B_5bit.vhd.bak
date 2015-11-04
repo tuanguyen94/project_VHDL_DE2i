@@ -1,0 +1,30 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity D2B_5bit is
+port
+(
+	A : in std_logic_vector(4 downto 0);
+	S1: out std_logic_vector(3 downto 0);
+	S2: out std_logic_vector(3 downto 0)
+	);
+	end D2B_5bit;
+
+architecture D2B_5bit_arch of D2B_5bit is
+signal dau: std_logic_vector(3 downto 0);
+signal duoi: std_logic_vector(3 downto 0);
+begin
+	process(A)
+		if(A > "01001" and A <="10011") then
+				dau <= "0001";
+				cuoi <= A - 9(3 downto 0);
+		else ( A > "10011") then
+				dau <= "0010";
+				cuoi <= A - 19(3 downto 0);
+		else 
+				dau <= "0000";
+				cuoi <= A(3 downto 0);
+		end if;
+	end process;
+end architecture;
+			
